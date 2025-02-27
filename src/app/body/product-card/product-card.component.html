@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <div class="col-4 mb-3" *ngFor="let item of products">
+      <div class="card" style="width: 100%;">
+        <img [src]="item.imageURL" class="card-img-top" alt="{{ item.name }}">
+        <div class="card-body">
+          <h4 class="card-title">{{ item.name }}</h4>
+          <p> {{item.brand}} {{item.gender}} {{item.category}} </p>
+
+          <a href="#" class="btn btn-primary">View Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
